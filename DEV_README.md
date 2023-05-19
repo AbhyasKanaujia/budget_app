@@ -30,12 +30,12 @@ backend
 
 2. Set up the User Registration Endpoint:
 
-- [ ] Create a route in your backend to handle user registration, such as POST /api/users/register.
-- [ ] Accept the required user information (e.g., username, email, password) in the request body.
-- [ ] Implement server-side validation for the provided data.
-- [ ] Hash the user's password for security using a library like bcrypt.
-- [ ] Create a new user instance based on the model and save it to the database (e.g., MongoDB).
-- [ ] Handle duplicate email
+- [x] Create a route in your backend to handle user registration, such as POST /api/users/register.
+- [x] Accept the required user information (e.g., username, email, password) in the request body.
+- [x] Implement server-side validation for the provided data.
+- [x] Hash the user's password for security using a library like bcrypt.
+- [x] Create a new user instance based on the model and save it to the database (e.g., MongoDB).
+- [x] Handle duplicate email
 
 3. Implement User Authentication:
 

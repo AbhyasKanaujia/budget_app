@@ -39,13 +39,13 @@ backend
 
 3. Implement User Authentication:
 
-- [ ] Create a route for user login, such as POST /api/users/login.
-- [ ] Accept the login credentials (e.g., username/email and password) in the request body.
-- [ ] Validate the provided credentials against the stored user data in the database.
-- [ ] Use bcrypt to compare the hashed password with the input password.
-- [ ] If the credentials are valid, generate a JSON Web Token (JWT) using a library like jsonwebtoken.
-- [ ] Sign the JWT with a secret key and include user-specific data (e.g., id, username) in the payload.
-- [ ] Send the JWT as a response to the client.
+- [x] Create a route for user login, such as POST /api/users/login.
+- [x] Accept the login credentials (e.g., username/email and password) in the request body.
+- [x] Validate the provided credentials against the stored user data in the database.
+- [x] Use bcrypt to compare the hashed password with the input password.
+- [x] If the credentials are valid, generate a JSON Web Token (JWT) using a library like jsonwebtoken.
+- [x] Sign the JWT with a secret key and include user-specific data (e.g., id, username) in the payload.
+- [x] Send the JWT as a response to the client.
 
 4. Secure Protected Routes:
 

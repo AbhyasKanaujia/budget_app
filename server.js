@@ -3,14 +3,15 @@ const express = require('express')
 const mongoose = require('mongoose')
 
 const userRoutes = require('./routes/userRoutes')
-
+const protectedRoutes = require('./routes/protectedRoutes')
+7
 const app = express()
 
 mongoose
   .connect(process.env.MONGODB_ATLAS_CONNECTION_STRING, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
-    autoIndex: true, 
+    autoIndex: true,
   })
   .then(() => console.log('Connected to MongoDB'))
   .catch((error) => console.error('MongoDB connecton error: ', error))
@@ -23,5 +24,6 @@ app.get('/api/test', (req, res) => {
   res.json({ message: 'Test endpoint is working!' })
 })
 app.use('/api/users', userRoutes)
+app.use('/api/', protectedRoutes)
 
 app.listen(port, () => console.log(`Server running on port ${port}`))

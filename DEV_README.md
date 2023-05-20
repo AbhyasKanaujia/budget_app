@@ -49,10 +49,10 @@ backend
 
 4. Secure Protected Routes:
 
-- [ ] For routes that require authentication, create middleware to verify the JWT in the request headers.
-- [ ] Extract the JWT from the request headers and verify its authenticity using the secret key.
-- [ ] If the JWT is valid, set the authenticated user data (e.g., id, username) in the request object and allow access to the protected route.
-- [ ] Otherwise, return an unauthorized response.
+- [x] For routes that require authentication, create middleware to verify the JWT in the request headers.
+- [x] Extract the JWT from the request headers and verify its authenticity using the secret key.
+- [x] If the JWT is valid, set the authenticated user data (e.g., id, username) in the request object and allow access to the protected route.
+- [x] Otherwise, return an unauthorized response.
 
 5. Client-Side Integration:
 
